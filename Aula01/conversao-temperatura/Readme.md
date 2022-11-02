@@ -10,7 +10,7 @@ docker build -t seuUserDockerhub/conversao-temperatura:v1 .
 docker image ls
 
 ```
-#### Para excluir imagens "lixo":
+#### Para excluir imagens lixo:
 ```bash
 docker image prune
 
@@ -27,7 +27,7 @@ docker push seuUserDockerhub/conversao-temperatura:latest
 
 #### Para executar a imagem e listar a imagem criada:
 - `-d`: Executa a imagem em modo daemon
-- `-p`: Efetua o portbind com a porta local
+- `-p`: Efetua o port binding com a porta local
 
 ```bash
 docker container run -d -p 8080:8080 seuUserDockerhub/conversao-temperatura:v1
