@@ -25,12 +25,13 @@ docker tag seuUserDockerhub/conversao-temperatura:v1 alexalexandrealves/conversa
 docker push seuUserDockerhub/conversao-temperatura:latest
 ```
 
-#### Para executar a imagem:
+#### Para executar a imagem e listar a imagem criada:
 - `-d`: Executa a imagem em modo daemon
 - `-p`: Efetua o portbind com a porta local
 
 ```bash
 docker container run -d -p 8080:8080 seuUserDockerhub/conversao-temperatura:v1
+docker image ls
 
 ```
 
@@ -38,3 +39,4 @@ docker container run -d -p 8080:8080 seuUserDockerhub/conversao-temperatura:v1
 
 ![Captura de tela de 2022-11-01 22-01-52](https://user-images.githubusercontent.com/70979408/199370890-2ab12f76-4011-40ac-82cd-4293073dfd9b.png)
 
+![Captura de tela de 2022-11-01 22-08-42](https://user-images.githubusercontent.com/70979408/199371070-6bc64a61-f874-4245-a30e-e91e711bfc86.png)
