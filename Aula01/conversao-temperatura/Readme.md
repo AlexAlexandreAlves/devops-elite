@@ -5,7 +5,7 @@
 docker build -t seuUserDockerhub/conversao-temperatura:v1 .
 
 ```
-#### Para verificar se a imagem foi criada
+#### Para listar as imagens criadas
 ```bash
 docker image ls
 
@@ -25,14 +25,13 @@ docker tag seuUserDockerhub/conversao-temperatura:v1 alexalexandrealves/conversa
 docker push seuUserDockerhub/conversao-temperatura:latest
 ```
 
-#### Para executar a imagem e listar a imagem criada
+#### Para executar a imagem criada
 
 - `-d`: Executa a imagem em modo daemon
 - `-p`: Efetua o port binding com a porta local
 
 ```bash
 docker container run -d -p 8080:8080 seuUserDockerhub/conversao-temperatura:v1
-docker image ls
 
 ```
 
