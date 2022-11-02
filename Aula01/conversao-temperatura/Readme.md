@@ -27,7 +27,7 @@ docker push seuUserDockerhub/conversao-temperatura:latest
 
 #### Para executar a imagem:
 `-d`: Executa a imagem em modo daemon
-#
+´
 `-p`: Efetua o portbind com a porta local
 
 ```bash
