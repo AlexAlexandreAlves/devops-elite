@@ -1,1 +1,6 @@
-# Teste
+## Como criar a imagem?
+
+### Após as configurações padrões no *Dockerfile* execute os seguintes comandos:
+´´ 
+teste
+´´
