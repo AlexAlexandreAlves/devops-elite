@@ -5,3 +5,8 @@
 docker build -t seuUserDockerhub/conversao-temperatura:v1 .
 
 ```
+#### Para verificar se a imagem foi criada:
+```bash
+docker imagem ls
+
+```
