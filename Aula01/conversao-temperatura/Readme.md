@@ -35,9 +35,9 @@ docker image ls
 
 ```
 
-### Se tudo der certo a aplicação deverá rodar assim:
+#### Se tudo der certo a aplicação deverá rodar assim:
 
 ![Captura de tela de 2022-11-01 22-01-52](https://user-images.githubusercontent.com/70979408/199370890-2ab12f76-4011-40ac-82cd-4293073dfd9b.png)
 --
-*DockerHub*
+#### DockerHub
 ![Captura de tela de 2022-11-01 22-08-42](https://user-images.githubusercontent.com/70979408/199371070-6bc64a61-f874-4245-a30e-e91e711bfc86.png)
