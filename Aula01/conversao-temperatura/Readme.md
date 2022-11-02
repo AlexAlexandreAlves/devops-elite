@@ -5,17 +5,17 @@
 docker build -t seuUserDockerhub/conversao-temperatura:v1 .
 
 ```
-#### Para verificar se a imagem foi criada:
+#### Para verificar se a imagem foi criada
 ```bash
 docker image ls
 
 ```
-#### Para excluir imagens lixo:
+#### Para excluir imagens lixo
 ```bash
 docker image prune
 
 ```
-#### Para subir para o DockerHub:
+#### Para subir para o DockerHub
 ```bash
 docker push seuUserDockerhub/conversao-temperatura:v1
 ```
@@ -25,7 +25,8 @@ docker tag seuUserDockerhub/conversao-temperatura:v1 alexalexandrealves/conversa
 docker push seuUserDockerhub/conversao-temperatura:latest
 ```
 
-#### Para executar a imagem e listar a imagem criada:
+#### Para executar a imagem e listar a imagem criada
+
 - `-d`: Executa a imagem em modo daemon
 - `-p`: Efetua o port binding com a porta local
 
@@ -35,7 +36,7 @@ docker image ls
 
 ```
 
-#### Se tudo der certo a aplicação deverá rodar assim:
+#### Se tudo der certo a aplicação deverá rodar desta forma
 
 ![Captura de tela de 2022-11-01 22-01-52](https://user-images.githubusercontent.com/70979408/199370890-2ab12f76-4011-40ac-82cd-4293073dfd9b.png)
 --
