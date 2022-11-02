@@ -1,6 +1,7 @@
 ## Como criar a imagem?
 
-### Após as configurações padrões no *Dockerfile* execute os seguintes comandos:
-ˋˋˋ
-teste
-ˋˋˋ
+### Após as configurações padrões no arquivo *Dockerfile*, seleciono a pasta src e execute os seguintes comandos:
+```bash
+docker build -t seuUserDockerhub/conversao-temperatura:v1 .
+
+```
