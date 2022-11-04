@@ -1,6 +1,6 @@
 # Kubernets
 
-## Cluster kubertes, responsável pela criação de um cluster atrelado a um container
+## Cluster kubernetes, responsável pela criação de um cluster atrelado a um container
 
 ```bash
 - k3d cluster create nomedocluster
