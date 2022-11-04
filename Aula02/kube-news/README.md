@@ -1,6 +1,6 @@
-##Kubernets
+# Kubernets
 
-##Cluster kubertes, responsável pela criação de um cluster atrelado a um container
+## Cluster kubertes, responsável pela criação de um cluster atrelado a um container
 
 ```bash
 - k3d cluster create nomedocluster
@@ -16,8 +16,8 @@
 - Visualizar as Api's do cluster: kubectl api-resources
 ```
 
-##Pod - Responsável pela execução dos containers
-####Para criar e manipular um pod selecione o arquivo yaml no vscode e execute o comando
+## Pod - Responsável pela execução dos containers
+#### Para criar e manipular um pod selecione o arquivo yaml no vscode e execute o comando
 ```bash
 - Criar: kubectl create -f .\pod.yaml
 - Visualizar: kubectl get pods
