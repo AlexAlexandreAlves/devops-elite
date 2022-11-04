@@ -3,8 +3,8 @@
 ## Cluster kubernetes, responsável pela criação de um cluster atrelado a um container
 
 ```bash
-- k3d cluster create nomedocluster
-- Cria com mais de um server e  mais de um agent: k3d cluster create meucluster --servers 3 --agents 3
+-k3d cluster create nomedocluster
+-Cria com mais de um server e  mais de um agent: k3d cluster create meucluster --servers 3 --agents 3
 ```
 
 #### Para visualizar e manipular todos os clusters existentes
