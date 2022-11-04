@@ -1,4 +1,6 @@
-##  Para criar uma imagem docker
+## Docker
+
+### Para criar uma imagem docker:
 
 #### Após as configurações padrões no arquivo *Dockerfile*, selecione a pasta src e execute os seguintes comandos:
 ```bash
