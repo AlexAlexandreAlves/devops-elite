@@ -13,20 +13,19 @@ spec:
         app: postgre
     spec:
       containers:
-      - name: postgre
-        image: postgres:14.3
-        ports:
-        - containerPort: 5432
-        env:
-          - name: POSTGRES_PASSWORD
-            value: "r00t@13"
-          - name: POSTGRES_USER
-            value: "r00t@13"
-          - name: POSTGRES_DB
-            value: "kubenews"
+        - name: postgre
+          image: postgres:15.0
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_DB
+              value: "Pg#123"
+            - name: POSTGRES_USER
+              value: "admin"
+            - name: POSTGRES_PASSWORD
+              value: "kubenews"
 
 ---
-
 apiVersion: v1
 kind: Service
 metadata:
@@ -39,7 +38,6 @@ spec:
       targetPort: 5432
 
 ---
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -54,20 +52,19 @@ spec:
         app: kubenews
     spec:
       containers:
-      - name: kubenews
-        image: arisonmota/kube-news:v2
-        env:
-        - name: DB_DATABASE
-          value: "kubenews"
-        - name: DB_USERNAME
-          value: "root"
-        - name: DB_PASSWORD
-          value: "r00t@13"
-        - name: DB_HOST
-          value: "postgre"
+        - name: kubenews
+          image: arisonmota/kube-news:v2
+          env:
+            - name: DB_DATABASE
+              value: "kubenews"
+            - name: DB_USERNAME
+              value: "root"
+            - name: DB_PASSWORD
+              value: "r00t@13"
+            - name: DB_HOST
+              value: "postgre"
 
 ---
-
 apiVersion: v1
 kind: Service
 metadata:
@@ -76,7 +73,7 @@ spec:
   selector:
     app: kubenews
   ports:
-  - port: 80
-    targetPort: 8080
-    nodePort: 30000
+    - port: 80
+      targetPort: 8080
+      nodePort: 30000
   type: NodePort
