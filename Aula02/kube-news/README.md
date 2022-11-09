@@ -17,10 +17,18 @@
 ```
 
 ## Pod - Responsável pela execução dos containers
-#### Para criar e manipular um pod selecione o arquivo yaml no vscode e execute o comando
+#### Para criar e manipular um pod selecione o arquivo yaml de config no vscode e execute o comando
 ```bash
 - Criar: kubectl create -f .\pod.yaml
-- Visualizar: kubectl get pods
+- Visualizar: kubectl get po
 - Descrever detalhadamento: kubectl describe pod meupod
 - Redirecionar a porta: kubectl port-forward pod/meupod 8080:80
+```
+
+## Deployment - Responsável pela criação e execução dos pods - Está acima na camada de gerenciamento
+#### Para criar e manipular um deployment selecione o arquivo yaml de config no vscode e execute o comando
+```bash
+- Criar: kubectl apply -f .\deployment.yaml
+- Visualizar: kubectl get all
+- Criando port-forward: kubectl port-forward service/postgre 5432:5432
 ```
