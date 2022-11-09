@@ -28,7 +28,7 @@
 ## Deployment - Responsável pela criação e execução dos pods - Está acima na camada de gerenciamento
 #### Para criar e manipular um deplyment selecione o arquivo yaml de config no vscode e execute o comando
 ```bash
-- Criar: kubectl apply -f .\deployment.yaml (este é o nome do meu arquivo *deplyment* arquivo)
+- Criar: kubectl apply -f .\deployment.yaml
 - Visualizar: kubectl get all
 - Criando port-forward: kubectl port-forward service/postgre 5432:5432
 ```
