@@ -55,12 +55,12 @@ spec:
     spec:
       containers:
       - name: kubenews
-        image: arisonmota/kube-news:v1
+        image: alexalexandrealves/kube-news:v1
         env:
         - name: DB_DATABASE
           value: "kubedevnews"
         - name: DB_USERNAME
-          value: "kubedevnews"
+          value: "admin"
         - name: DB_PASSWORD
           value: "Pg#123"
         - name: DB_HOST
