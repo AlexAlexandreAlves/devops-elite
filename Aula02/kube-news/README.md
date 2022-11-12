@@ -13,7 +13,7 @@
 - Visualiza: kubectl get nodes
 - Lista: k3d cluster list
 - Deleta: k3d cluster delete
-- Visualizar as Api's do cluster: kubectl api-resources
+- Visualizar as Apis do cluster: kubectl api-resources
 ```
 
 ## Pod - Responsável pela execução dos containers
